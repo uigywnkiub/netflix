@@ -555,19 +555,19 @@ header {
 
   /* HEADER CONTENT */
   .background-header {
-    height: 70vh;
+    height: 75vh;
   }
 
   .blur {
-    height: 70vh;
+    height: 75vh;
   }
 
   .black-background {
-    height: 70vh;
+    height: 75vh;
   }
 
   .main-content {
-    height: calc(70vh - 69px);
+    height: calc(75vh - 69px);
   }
 
   .main-content .content-title h1 {
