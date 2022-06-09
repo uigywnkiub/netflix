@@ -1,5 +1,9 @@
+@font-face {
+  font-family: myFont;
+  src: url(./NetflixSans-Regular.woff2);
+}
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: myFont;
 }
 
 * {
@@ -379,7 +383,7 @@ header {
   list-style-type: none;
 }
 
-.fifth-block .faq-list .faq-button {
+.fifth-block .faq-list .faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -393,6 +397,21 @@ header {
   font-size: 1.6rem;
   cursor: pointer;
   height: 80px;
+}
+
+.fifth-block .faq-list .faq-answer_block {
+  background: #303030;
+  margin-bottom: 10px;
+  margin-top: -8px;
+  display: none;
+  text-align: left;
+  transition: height 1s;
+}
+
+.active {
+  transition: height 1s;
+  height: 100%;
+  background-color: yellow;
 }
 
 .fifth-block .faq-list li:last-child button:last-child {
@@ -460,7 +479,7 @@ header {
 }
 
 .footer__lang select {
-  /* background-color: transparent; */
+  background-color: transparent;
   font-size: 1rem;
   padding: 1rem 0 1rem 2rem;
   border-radius: 3px;
@@ -480,6 +499,10 @@ header {
 
 .footer__lang p {
   padding: 20px 0px 0px 0px;
+}
+
+.arrow-down svg {
+  display: none;
 }
 
 /* MEDIA */
@@ -704,7 +727,7 @@ header {
     font-size: 1.8rem;
   }
 
-  .fifth-block .faq-list .faq-button {
+  .fifth-block .faq-list .faq-question {
     font-size: 1rem;
     height: 60px;
     padding: 0 0.5rem;
@@ -717,9 +740,15 @@ header {
   .fifth-block .faq-text p {
     font-size: 1rem;
   }
-
-  .footer__wrapper {
-    font-size: 13px;
+  
+  .footer__lang .wrap {
+    position: relative;
+  }
+  .arrow-down svg {
+    display: block;
+    position: absolute;
+    top: 11.5px;
+    left: 125px;
   }
 }
 
