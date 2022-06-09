@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  letter-spacing: -0.5px;
+}
+
 main,
 header {
   color: white;
@@ -264,7 +268,7 @@ header {
   align-items: center;
   width: 60%;
   background-color: #000;
-  padding: 0.2rem 0.6rem;
+  padding: 0.4rem 0.6rem;
   box-shadow: 0 0 2rem 0 #000;
   border-radius: 0.7rem;
   justify-content: space-between;
@@ -284,10 +288,11 @@ header {
   font-size: 0.9rem;
   color: #0071eb;
   font-weight: 400;
+  padding-left: 10%;
 }
 
 .second-block__container .second-block__picture .loading__container .gif {
-  width: 15%;
+  width: 20%;
 }
 
 .second-block__container .second-block__text {
@@ -572,7 +577,7 @@ header {
     width: calc(120px / 1.1);
     height: calc(36px / 1.1);
     font-size: 0.9rem;
-    padding: 0.4rem 1rem 0.4rem 1.2rem;
+    padding: 0.4rem 0 0.4rem 1.4rem;
   }
 
   .flex-content .flex-left svg {
