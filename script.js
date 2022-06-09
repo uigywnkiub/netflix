@@ -1,4 +1,6 @@
-function showAnswer0() {
+//show answer blocks
+function showAnswer1() {
+  document.getElementsByClassName('faq-answer_block')[1].style.display = 'none'
   let answerShow = document.getElementsByClassName('faq-answer_block')[0]
   let animateBlock = document.getElementsByClassName('faq-answer_block')[0]
   let changeableAnimPath = document.getElementsByClassName('changeable_svg')[0]
@@ -8,7 +10,7 @@ function showAnswer0() {
     answerShow.style.display = 'block'
     animateBlock.animate({ opacity: [0.6, 1] }, 200)
     changeableAnimPath.animate({ opacity: [0.6, 1] }, 200)
-    changeableAnimPath.setAttribute('width', '30px')
+    changeableAnimPath.setAttribute('width', '18px')
     changeablePath.setAttribute(
       'd',
       'M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'
@@ -22,7 +24,15 @@ function showAnswer0() {
   }
 }
 
-function showAnswer1() {
+function showAnswer2() {
+  document.getElementsByClassName('faq-answer_block')[0].style.display = 'none'
+  document
+    .getElementsByClassName('changeable_path')[0]
+    .setAttribute(
+      'd',
+      'M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'
+    )
+
   let answerShow = document.getElementsByClassName('faq-answer_block')[1]
   let animateBlock = document.getElementsByClassName('faq-answer_block')[1]
   let changeableAnimPath = document.getElementsByClassName('changeable_svg')[1]
@@ -32,7 +42,7 @@ function showAnswer1() {
     answerShow.style.display = 'block'
     animateBlock.animate({ opacity: [0.6, 1] }, 200)
     changeableAnimPath.animate({ opacity: [0.6, 1] }, 200)
-    changeableAnimPath.setAttribute('width', '30px')
+    changeableAnimPath.setAttribute('width', '18px')
     changeablePath.setAttribute(
       'd',
       'M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'

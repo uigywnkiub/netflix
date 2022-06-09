@@ -28,11 +28,20 @@
         <div class="flex-right">
           <div class="flex-right-lang">
             <img src="./images/globe-svg.svg" alt="small globe" />
-            <select>
-              <option>Deutsch</option>
-              <option selected>English</option>
-              <option>France</option>
-            </select>
+            <div class="wrap-arrow_header">
+              <select>
+                <option>Deutsch</option>
+                <option selected>English</option>
+                <option>France</option>
+              </select>
+              <div class="arrow-down_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14.4" fill="#999" class="bi bi-arrow-down-short"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+              </div>
+            </div>
           </div>
           <a href="#">Sign In</a>
         </div>
@@ -139,13 +148,13 @@
         <h1>Frequently Asked Questions</h1>
         <ul class="faq-list">
           <li>
-            <button onclick="showAnswer0()" class="faq-question">What is Netflix?<span><svg
-                  xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="changeable_svg"
+            <button onclick="showAnswer1()" class="faq-question">What is Netflix?<span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="18" fill="currentColor" class="changeable_svg"
                   viewBox="0 0 16 16">
                   <path class="changeable_path" fill-rule="evenodd"
                     d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                 </svg></span></button>
-            <div class="faq-answer_block">
+            <div class="faq-answer_block close">
               <p>
                 Netflix is a streaming service that offers a wide variety of<br> award-winning TV shows, movies, anime,
                 documentaries, and<br> more on thousands of internet-connected devices.<br><br>You can watch as much as
@@ -155,13 +164,13 @@
             </div>
           </li>
           <li>
-            <button onclick="showAnswer1()" class="faq-question">How much does Netflix cost?<span><svg
-                  xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="changeable_svg"
+            <button onclick="showAnswer2()" class="faq-question">How much does Netflix cost?<span><svg
+                  xmlns="http://www.w3.org/2000/svg" width="18" fill="currentColor" class="changeable_svg"
                   viewBox="0 0 16 16">
                   <path class="changeable_path" fill-rule="evenodd"
                     d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                 </svg></span></button>
-            <div class="faq-answer_block">
+            <div class="faq-answer_block close">
               <p>
                 Watch Netflix on your smartphone, tablet, Smart TV, laptop, or<br> streaming device, all for one fixed
                 monthly fee. Plans range<br> from EUR 4.99 to EUR 9.99 a month. No extra costs, no contracts.
@@ -169,14 +178,14 @@
             </div>
           </li>
           <li>
-            <button class="faq-question">Where can I watch?<span><svg xmlns="http://www.w3.org/2000/svg" width="30"
+            <button class="faq-question">Where can I watch?<span><svg xmlns="http://www.w3.org/2000/svg" width="18"
                   fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                 </svg></span></button>
           </li>
           <li>
-            <button class="faq-question">How do I cancel?<span><svg xmlns="http://www.w3.org/2000/svg" width="30"
+            <button class="faq-question">How do I cancel?<span><svg xmlns="http://www.w3.org/2000/svg" width="18"
                   fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
@@ -184,21 +193,21 @@
           </li>
           <li>
             <button class="faq-question">What can I watch on Netflix?<span><svg xmlns="http://www.w3.org/2000/svg"
-                  width="30" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                  width="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                 </svg></span></button>
           </li>
           <li>
             <button class="faq-question">Is Netflix good for kids?<span><svg xmlns="http://www.w3.org/2000/svg"
-                  width="30" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                  width="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                 </svg></span></button>
           </li>
           <li>
             <button class="faq-question">Why am I seeing this language?<span><svg xmlns="http://www.w3.org/2000/svg"
-                  width="30" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                  width="18" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                 </svg></span></button>
@@ -253,17 +262,17 @@
           </div>
         </div>
         <div class="footer__lang">
-          <div class="wrap">
+          <div class="wrap-arrow_footer">
             <select>
               <option>Deutsch</option>
               <option selected>English</option>
               <option>France</option>
             </select>
-            <div class="arrow-down">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="#999" class="bi bi-arrow-down-short"
+            <div class="arrow-down_footer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" fill="#999" class="bi bi-arrow-down-short"
                 viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
               </svg>
             </div>
           </div>
